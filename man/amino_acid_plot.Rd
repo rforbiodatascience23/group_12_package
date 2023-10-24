@@ -7,10 +7,10 @@
 amino_acid_plot(codon_table)
 }
 \arguments{
-\item{codon_table}{is a dataset of codons and aminoacid sympols}
+\item{codon_table}{A dataset of codons and amino acid symbols}
 }
 \value{
-a column plot of aminoacid counts???
+A column plot of the unique amino acid symbols
 }
 \description{
 Plotting amino acid counts

@@ -17,3 +17,40 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(CD12)
 ```
+
+Package description:
+
+The current package consists of 7 functions. 
+
+
+
+
+Function 1:
+
+This function carries out the random DNA sequence generation of a specified length.
+It takes one argument, "seq_length", which needs to be a positive integer, representing the wanted length of the sequence to be created. 
+As an output, it gives the string "seq_str", which is the resulting sequence. 
+This function is tested based on 2 parameters:
+1. The length of the output sequence (the number of characters of the output string) must be equal to the given argument
+2. The output string should only include the characters A, T, G, or C.
+
+
+Function 2:
+
+Function 3:
+
+Function 4:
+
+Function 5:
+
+
+
+
+
+
+Use Cases and Additional Functions:
+
+
+
+
+

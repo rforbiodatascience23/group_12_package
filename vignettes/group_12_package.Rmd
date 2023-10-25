@@ -20,10 +20,7 @@ library(CD12)
 
 Package description:
 
-The current package consists of 7 functions. 
-
-
-
+The current package consists of 7 functions, that can be used for generating, modifying as well as displaying genetic (DNA and RNA) sequences.
 
 Function 1:
 

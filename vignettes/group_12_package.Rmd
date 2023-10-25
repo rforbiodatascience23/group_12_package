@@ -1,10 +1,13 @@
 ---
 title: "group_12_package"
-output: rmarkdown::html_vignette
+output: rmarkdown::pdf_document
 vignette: >
   %\VignetteIndexEntry{group_12_package}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  markdown: 
+    wrap: sentence
 ---
 
 ```{r, include = FALSE}
@@ -18,36 +21,49 @@ knitr::opts_chunk$set(
 library(CD12)
 ```
 
-Package description:
+## Group 12 - Lab 8: Creating a Simple R-package
+
+Study numbers: s222940, s222940, s223712, s222777 and s234118,
+
+### Link to the GitHub:
+
+### <https://github.com/rforbiodatascience23/group_12_package/tree/master/R>
+
+### Package description:
 
 The current package consists of 7 functions, that can be used for generating, modifying as well as displaying genetic (DNA and RNA) sequences.
 
-Function 1:
+Further the package includes a dataset of codons and eqivalent amino acid symbols: col_table.rda
+
+### Function 1: randomseq
 
 This function carries out the random DNA sequence generation of a specified length.
-It takes one argument, "seq_length", which needs to be a positive integer, representing the wanted length of the sequence to be created. 
-As an output, it gives the string "seq_str", which is the resulting sequence. 
-This function is tested based on 2 parameters:
-1. The length of the output sequence (the number of characters of the output string) must be equal to the given argument
-2. The output string should only include the characters A, T, G, or C.
+It takes one argument, "seq_length", which needs to be a positive integer, representing the wanted length of the sequence to be created.
+As an output, it gives the string "seq_str", which is the resulting sequence.
+This function is tested based on 2 parameters: 1.
+The length of the output sequence (the number of characters of the output string) must be equal to the given argument 2.
+The output string should only include the characters A, T, G, or C.
 
+### Function 2:
 
-Function 2:
+### Function 3:
 
-Function 3:
+### Function 4:
 
-Function 4:
+### Function 5: amino_acid_plot
 
-Function 5:
+This function is used for data containing amino acid symbols.
+It can count the different amino acids and returns a column graph of the counts of each amino acid.
+The function has two dependencies: the packages "stringr" and "ggplot2".
+This is specified in the function document.
+Therefore these two packages must be specified in the console by using the commands: usethis::use_package("stringr") and usethis::use_package("ggplot2").
+To avoid any confusion about package function names, the code includes the package-name followed by the function-name, e.g. "ggplot2::geom_col()".
+This method is called namespace.
+If a function-name occurs in several packages, we have specified which one we want to use.
+In general we should avoid the use of to many dependencies as these increase the risk of errors in the function.
 
+The function is checked by the devtools::check() - command.
+It gives us two warnings, that is related to the names of the columns and rows.
+We have not yet been able to correct this error.
 
-
-
-
-
-Use Cases and Additional Functions:
-
-
-
-
-
+### Use Cases and Additional Functions:

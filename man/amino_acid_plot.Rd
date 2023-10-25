@@ -7,10 +7,10 @@
 amino_acid_plot(seq)
 }
 \arguments{
-\item{codon_table}{A dataset of codons and amino acid symbols}
+\item{seq}{A data set of codons and amino acid symbols}
 }
 \value{
-A column plot of the unique amino acid symbols
+A column plot of the count of unique amino acid symbols
 }
 \description{
 Plotting amino acid counts

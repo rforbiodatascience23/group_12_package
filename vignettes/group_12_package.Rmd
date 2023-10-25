@@ -46,7 +46,9 @@ The output string should only include the characters A, T, G, or C.
 
 ### Function 2:
 
-### Function 3:
+### Function 3: transcription
+
+This function is used to transcribe DNA sequences into RNA. The input parameters are a DNA sequence and the "start" parameter which specifies the starting position of the transcription (it is set to a default position which equals to 1). The function calculates the length of each input sequence and breaks it down into codons of 3 characters (nucleotides). The output of the function is a vector of the RNA codons. 
 
 ### Function 4:
 
@@ -67,3 +69,5 @@ It gives us two warnings, that is related to the names of the columns and rows.
 We have not yet been able to correct this error.
 
 ### Use Cases and Additional Functions:
+
+- A possible use of the package could be to compare RNA sequences which will be translated into proteins, in order to investigate gene expression patterns or mutations in the DNA that can influence the final proteins. 

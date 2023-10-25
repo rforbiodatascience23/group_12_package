@@ -9,13 +9,13 @@
 
 # This is how I changed the name_mes - I think that the name_me2 and the Name_me2 are different, but I dont know what a good name for Name_me2 should be..???
 # name_me1 = amino_acid_plot
-# name_me2 = codon_table
+# name_me2 = seq
 # Name_me2 = Unique_amino_acids
 # name_me3 = unique_amino_acid_symbols
 # name_me4 = graph_col
 
-amino_acid_plot <- function(codon_table){
-  unique_amino_acid_symbols <- codon_table |>
+amino_acid_plot <- function(seq){
+  unique_amino_acid_symbols <- seq |>
     stringr::str_split(pattern = stringr::boundary("character"),
                        simplify = TRUE) |>
     as.character() |>
@@ -23,7 +23,7 @@ amino_acid_plot <- function(codon_table){
   #this code takes the amino acid symbols from the codon table and returns a list of unique symbols
 
   counts <- sapply(unique_amino_acid_symbols,
-                   function(amino_acid) stringr::str_count(string = codon_table,
+                   function(amino_acid) stringr::str_count(string = seq,
                                                            pattern = amino_acid)) |>
     as.data.frame()
   #this code counts the amino acid symbols in the codon table, and returns it as a dataframe.

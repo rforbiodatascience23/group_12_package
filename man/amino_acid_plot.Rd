@@ -4,7 +4,7 @@
 \alias{amino_acid_plot}
 \title{Plotting amino acid counts}
 \usage{
-amino_acid_plot(codon_table)
+amino_acid_plot(seq)
 }
 \arguments{
 \item{codon_table}{A dataset of codons and amino acid symbols}

@@ -10,4 +10,3 @@ library(testthat)
 library(CD12)
 
 test_check("CD12")
-

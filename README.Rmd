@@ -1,23 +1,22 @@
 ---
-title: "group_12_package"
-output: rmarkdown::pdf_document
-vignette: >
-  %\VignetteIndexEntry{group_12_package}
-  %\VignetteEncoding{UTF-8}
-  %\VignetteEngine{knitr::rmarkdown}
-editor_options: 
-  markdown: 
-    wrap: sentence
+output: github_document
 ---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
 )
 ```
 
+# CD12
 
+<!-- badges: start -->
+<!-- badges: end -->
 
 ## Group 12 - Lab 8: Creating a Simple R-package
 
@@ -82,3 +81,4 @@ We have not yet been able to correct this error.
 
 A possible use of the package could be to compare RNA sequences which will be translated into proteins. 
 The purpose would be to investigate gene expression patterns or mutations in the DNA that can influence the final proteins. 
+

@@ -44,7 +44,11 @@ This function is tested based on 2 parameters: 1.
 The length of the output sequence (the number of characters of the output string) must be equal to the given argument 2.
 The output string should only include the characters A, T, G, or C.
 
-### Function 2:
+### Function 2: rna_transcription
+
+Function 2 converts T amino acids into U amino acids.
+There is one input of the function which is a DNA sequence containing the letter T and the output is a dna with all "T"s replaced with "U"s.
+The output of this function will be used in function 3 as then the sequence can be separated into codons.
 
 ### Function 3: transcription
 

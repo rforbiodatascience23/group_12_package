@@ -7,4 +7,5 @@
 rna_transcription <- function(dna){
   rna <- gsub("T", "U", dna)
   return(rna)
+
 }

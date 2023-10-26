@@ -31,6 +31,10 @@ LazyData: true
 Depends: 
     R (>= 2.10)
 RoxygenNote: 7.2.3
+<<<<<<< HEAD
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+=======
+Suggests: 
+>>>>>>> 40389943030f3d041284acbc138e5ddf29ba48a2

@@ -53,7 +53,12 @@ The input parameters are a DNA sequence and the "start" parameter which specifie
 The function calculates the length of each input sequence and breaks it down into codons of 3 characters (nucleotides). 
 The output of the function is a vector of the RNA codons. 
 
-### Function 4:
+### Function 4: translation
+
+This function translates RNA sequence into a amino acid chain sequence.
+The RNA sequence has to be divided into the series of codons (three nucleotides coding for a specific amino acid).
+Function translates each codon into an appropriate amino acids in accordance to the codon table.
+Returned result are shown as a sequence of letters corresponding to amino acid one-letter abbreviations.
 
 ### Function 5: amino_acid_plot
 
